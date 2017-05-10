@@ -138,7 +138,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
 	this.onKeyDown = function ( event ) {
 
-		//event.preventDefault();
+		event.preventDefault();
 		//event.stopPropagation();
 
 		switch ( event.keyCode ) {
