@@ -138,8 +138,8 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
 	this.onKeyDown = function ( event ) {
 
-		event.preventDefault();
-		event.stopPropagation();
+		//event.preventDefault();
+		//event.stopPropagation();
 
 		switch ( event.keyCode ) {
 
@@ -262,13 +262,13 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
 	this.dispose = function() {
 
-		this.domElement.removeEventListener( 'contextmenu', contextmenu, false );
+		//this.domElement.removeEventListener( 'contextmenu', contextmenu, false );
 		this.domElement.removeEventListener( 'mousedown', _onMouseDown, false );
-		this.domElement.removeEventListener( 'mousemove', _onMouseMove, false );
+		//this.domElement.removeEventListener( 'mousemove', _onMouseMove, false );
 		this.domElement.removeEventListener( 'mouseup', _onMouseUp, false );
 
-		window.removeEventListener( 'keydown', _onKeyDown, false );
-		window.removeEventListener( 'keyup', _onKeyUp, false );
+		//window.removeEventListener( 'keydown', _onKeyDown, false );
+		//window.removeEventListener( 'keyup', _onKeyUp, false );
 
 	};
 
